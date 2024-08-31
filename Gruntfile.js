@@ -5,8 +5,12 @@ module.exports = function(grunt) {
                 options: {
                     patterns: [
                         {
-                            match: "replaceme",
+                            match: "CSSDIR",
                             replacement: "./css/main.css"
+                        },
+                        {
+                            match: /IMGDIR/g,
+                            replacement: "./images"
                         }
                     ]
                 },
