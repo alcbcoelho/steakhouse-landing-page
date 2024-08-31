@@ -1,0 +1,130 @@
+@use './config/vars';
+@use './config/mixins';
+@use 'sass:color';
+
+:root {
+    font-family: vars.$font-main;
+}
+
+body {
+    @include mixins.set-text-color-and-background-color(vars.$text-color, vars.$background-color-1);
+}
+
+.section-colored {
+    @include mixins.set-text-color-and-background-color(vars.$text-color-2, vars.$background-color-2);
+    color: vars.$text-color-2;
+    // background-image: linear-gradient(to bottom, #600000, #460000);
+    // background-image: linear-gradient(to bottom, #3b0e0e, darken(#3b0e0e, 3%));
+    background-image: linear-gradient(to bottom, #600400, darken(#600400, 7.5%));
+
+    .alt-text-color {
+        color: vars.$text-color-2-alt;
+    }
+}
+
+.navbar {
+    // border-bottom: 1px #0f04043f solid;
+    background-color: vars.$primary-color;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.section-title {
+    font-family: vars.$font-display;
+}
+
+.alt-text-color {
+    color: vars.$text-color-alt;
+    // text-shadow: 0 0 16px vars.$text-color-alt;
+}
+
+.navbar-brand.h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 1.5rem;
+    color: #fff;
+
+    .brand-subtitle {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        font-family: vars.$font-main;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+
+        .dash {
+            width: 0.75rem;
+            height: 1px;
+            background-color: vars.$text-color-2-alt;
+        }
+    }
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.restaurant-menu {
+    .nav-link.active {
+        font-weight: 400;
+        background-color: vars.$secondary-color;
+    }
+
+    .nav-link.active,
+    .nav-link.active:hover {
+        color: #fff;
+    }
+
+    .nav-link:hover {
+        color: vars.$secondary-color;
+    }
+}
+
+#fale-conosco {
+    button {
+        color: vars.$text-color-2-alt;
+        border: 1px vars.$text-color-2-alt solid;
+    }
+
+    button:hover {
+        @include mixins.set-text-color-and-background-color(vars.$secondary-color, vars.$text-color-2-alt);
+    }
+}
+
+.social-links {
+    li {
+        list-style: none;
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.form-control {
+    outline: none;
+
+    &:focus {
+        border: none;
+        box-shadow: 1px 1px 5px #6520157f;
+    }
+}
+
+footer {
+    padding: 1rem 0;
+    background-color: vars.$background-color-1;
+
+    p {
+        color: vars.$text-color-2-alt;
+        margin: 0;
+    }
+}

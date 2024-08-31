@@ -1,0 +1,109 @@
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: #fff;
+  background-color: #080202;
+}
+
+.section-colored {
+  color: #c79f9d;
+  background-color: #600400;
+  color: #c79f9d;
+  background-image: linear-gradient(to bottom, #600400, #3a0200);
+}
+.section-colored .alt-text-color {
+  color: #fff;
+}
+
+.navbar {
+  background-color: #600400;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.section-title {
+  font-family: "Lugrasimo", cursive;
+}
+
+.alt-text-color {
+  color: #850c0c;
+}
+
+.navbar-brand.h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.navbar-brand.h1 .brand-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.navbar-brand.h1 .brand-subtitle .dash {
+  width: 0.75rem;
+  height: 1px;
+  background-color: #fff;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.restaurant-menu .nav-link.active {
+  font-weight: 400;
+  background-color: #850c0c;
+}
+.restaurant-menu .nav-link.active,
+.restaurant-menu .nav-link.active:hover {
+  color: #fff;
+}
+.restaurant-menu .nav-link:hover {
+  color: #850c0c;
+}
+
+#fale-conosco button {
+  color: #fff;
+  border: 1px #fff solid;
+}
+#fale-conosco button:hover {
+  color: #850c0c;
+  background-color: #fff;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+.social-links a {
+  text-decoration: none;
+}
+
+.form-control {
+  outline: none;
+}
+.form-control:focus {
+  border: none;
+  box-shadow: 1px 1px 5px rgba(101, 32, 21, 0.4980392157);
+}
+
+footer {
+  padding: 1rem 0;
+  background-color: #080202;
+}
+footer p {
+  color: #fff;
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
